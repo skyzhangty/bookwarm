@@ -6,7 +6,18 @@ class LoginPage extends React.Component {
 		return (
 			<div>
 				<h1>Login Page</h1>
+				<h1>Login Page</h1>
+				<h1>Login Page</h1>
+				<h1>Login Page</h1>
+				<h1>Login Page</h1>
+				<h1>Login Page</h1>
 				<LoginFormContainer />
+				<h1>Login Page</h1>
+				<h1>Login Page</h1>
+				<h1>Login Page</h1>
+				<h1>Login Page</h1>
+				<h1>Login Page</h1>
+				<h1>Login Page</h1>
 			</div>
 		);
 	} 

@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import LoginForm from '../../components/forms/LoginForm';
-import {reduxForm} from 'redux-form';
+
 
 const mapStateToProps = () => ({
   
@@ -14,10 +14,5 @@ const mapDispatchToProps = () => {
 	};
 };
 
-let LoginFormContainer = reduxForm({
-	form: 'login'
-})(LoginForm);
+export default connect(mapStateToProps, mapDispatchToProps,null,{ withRef: true })(LoginForm);
 
-LoginFormContainer = connect(mapStateToProps, mapDispatchToProps)(LoginFormContainer);
-
-export default LoginFormContainer;
