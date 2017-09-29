@@ -3,9 +3,17 @@ module.exports = {
         "browser": true,
         "commonjs": true,
         "es6": true,
-        "node": true
+        "node": true,
+        "jasmine": true
     },
-    "extends": "eslint:recommended",
+    "extends": [
+        "airbnb",
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:jasmine/recommended",
+        "prettier",
+        "prettier/react"
+    ],
     "parserOptions": {
         "ecmaFeatures": {
             "experimentalObjectRestSpread": true,
@@ -14,7 +22,9 @@ module.exports = {
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "jasmine",
+        "jest"
     ],
     "rules": {
         "indent": [
@@ -33,7 +43,6 @@ module.exports = {
             "error",
             "always"
         ],
-        "react/jsx-uses-vars": [2],
         "react/jsx-uses-react": [2]
     }
 };
